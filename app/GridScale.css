@@ -1,0 +1,129 @@
+.gameGridParent {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    bottom: 72px;
+    justify-content: center;
+}
+
+.screen {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.gamegrid {
+    max-width: 1768px;
+    width: 100%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 26.08% clamp(454px, 45.40%, 802px) 26.08%;
+    grid-template-areas: "raceTrack betSpot modalValues";
+    justify-content: space-between;
+    align-items: end;
+}
+
+.raceTrack {
+    display: grid;
+    align-items: end;
+    aspect-ratio: 2.504;
+    grid-area: raceTrack;
+}
+
+.raceTrackImg {
+    background-image: url(../public/Images/Common_desktopRaceTrack.png);
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+.betboard {
+    display: grid;
+    align-items: end;
+    aspect-ratio: 3.013;
+    grid-area: betSpot;
+    width: 100%;
+}
+
+.betBoardImg {
+    background-image: url(../public/Images/CommonDesktopBetBoard.png);
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.stats {
+    display: grid;
+    align-items: end;
+    aspect-ratio: 2.504;
+    grid-area: modalValues;
+}
+
+.statsImg {
+    background-image: url(../public/Images/CommonDesktopStats.png);
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: end;
+}
+
+
+@media (orientation:landscape) and (width<1024px) {
+
+
+    .gamegrid {
+        grid-template-columns: 1fr;
+        grid-template-areas: "betSpot";
+        justify-content: space-between;
+        max-width: 508px;
+        width: calc(100vw - 96px);
+        margin: 0 auto;
+    }
+
+    .gamegrid>*:not(:nth-child(2)) {
+        display: none;
+
+    }
+
+    .betboard {
+        aspect-ratio: 2.478;
+    }
+
+}
+
+
+
+@media (min-width: 1024px) {
+    .gameGridParent {
+        bottom: 48px
+    }
+
+    .gamegrid {
+        margin: 0 12px 0 12px;
+    }
+
+}
+
+@media (min-width: 1366px) {
+
+    .gameGridParent {
+        bottom: 60px
+    }
+
+}
+
+
+
+@media (min-width: 1512px) {
+
+    .gamegrid {
+        margin: 0 16px 0 16px;
+    }
+}

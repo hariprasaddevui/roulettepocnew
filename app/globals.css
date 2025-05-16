@@ -1,26 +1,102 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+  background: url(../public/Images/DesktopBG.png) no-repeat center center;
+  padding: 0;
+  margin: 0;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+h1 { color: #0F172A; }  /* Rich Navy */
+h2 { color: #1E3A8A; }  /* Strong Blue */
+h3 { color: #2563EB; }  /* Vivid Blue */
+h4 { color: #334155; }  /* Slate Gray */
+h5 { color: #896503; }  /* Medium Slate */
+h6 { color: #64748B; }  /* Soft Gray */
+h1, h2, h3, h4, h5, h6{
+  margin-bottom: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+p {
+  color: #4B5563;       /* Cool Gray for readability */
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 1em;
+}
+p.secondary {
+  color: #6B7280;       /* Light Slate */
+  font-size: 0.95rem;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.btnSection {
+
+  position: absolute;
+  top: 50px;
+  left: 30px;
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
 }
+
+.btnSection .btnView {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-size: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 36px;
+  height: 36px;
+  padding: 0 15px;
+  cursor: pointer;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  font-weight: bold;
+
+
+}
+
+.btnSection .btnView:last-child {
+  border-right: 0;
+}
+
+.data {
+  position: absolute;
+  background-color: #fff;
+  border-radius: 16px;
+  height: calc(100% - 10%);
+  z-index: 99;
+  width: calc(100% - 10%);
+  top: 5%;
+  left: 5%;
+  overflow: hidden;
+
+}
+
+.dataBody {
+  height: calc(100% - 50px);
+  padding: 30px;
+  overflow-y: scroll;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.header small {
+  font-size: 12px;
+}
+
+
+/* <img src="https://picsum.photos/200/300" alt="" /> */

@@ -1,0 +1,131 @@
+:root {
+    --roads: 386PX;
+    --betBoard: 672px;
+}
+
+.scaleLogic {
+    bottom: 8.5%;
+    /* position: fixed !important; */
+}
+
+.master {
+    position: relative;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    width: 100%;
+    /* background-color: pink; */
+    height: 100vh;
+}
+
+@media(max-width:1023px) {
+    .master {
+        display: none;
+    }
+}
+
+.mainNew {
+    display: flex;
+    width: calc(100% - 32px);
+    width: calc(100% - 0px);
+
+    align-items: end;
+    justify-content: center;
+    /* padding: 0px gap; */
+}
+
+.wrapper {
+    display: grid;
+    /* column-gap: 16px; */
+    /* grid-template-columns: 333.33px 333.33px 333.33px; */
+    grid-template-columns: var(--roads) var(--betBoard) var(--roads);
+    width: calc(100% - 0px);
+    box-sizing: border-box;
+}
+
+@media(min-width:1024px) {
+    .wrapper {
+        column-gap: 12px;
+    }
+}
+
+@media(min-width:1366px) {
+    .wrapper {
+        column-gap: 16px;
+    }
+}
+
+@media(min-width:1512px) {
+    .wrapper {
+        column-gap: 18px;
+    }
+}
+
+@media(min-width:1800px) {
+    .wrapper {
+        column-gap: 22px;
+    }
+}
+
+@media(min-width:1800px) {
+    .mainNew {
+        padding: 0;
+
+    }
+}
+
+
+.roads {
+    background: url(../public/Images/Common_desktopRaceTrack.png) no-repeat center center;
+    background-position: bottom;
+    width: 100%;
+    background-size: contain;
+    height: 100%;
+}
+
+.betBoard {
+    background: url(../public/Images/CommonDesktopBetBoard.png) no-repeat center center;
+
+    background-position: bottom;
+    width: 100%;
+    background-size: contain;
+
+    height: 100%;
+
+}
+
+.rightRoads {
+    background: url(../public/Images/CommonDesktopStats.png) no-repeat center center;
+
+    width: 100%;
+    background-size: contain;
+
+    height: 386px;
+    background-position: bottom;
+
+}
+
+.flip {
+    transform: scaleX(-1);
+}
+
+.portraitView {
+    background-color: red;
+    display: none;
+}
+
+.landscapeView {
+    background-color: green;
+}
+
+@media (orientation: portrait) {
+    .portraitView {
+        display: block;
+    }
+}
+
+@media (orientation: landscape) {
+    .landscapeView {
+        display: block;
+    }
+}
