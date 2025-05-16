@@ -12,8 +12,7 @@ export default function Home() {
           height={38}
           priority
         />
-  Heelo
-
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum, minus iste ad ipsam possimus nisi laborum et. Et at soluta quasi, ullam perspiciatis delectus voluptate possimus quis ratione, maiores ab.</p>
    
       </main>
    
