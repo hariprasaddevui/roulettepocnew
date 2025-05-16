@@ -122,7 +122,9 @@
 
 
 @media (min-width: 1512px) {
-
+    .gameGridParent {
+        bottom: 72px
+    }
     .gamegrid {
         margin: 0 16px 0 16px;
     }

@@ -9,10 +9,14 @@ import TransformScale from "./TransformScale";
 export default function Home() {
   const [activeTab, setActiveTab] = useState(""); // No tab shown initially
 
+  // Handler to close Guidelines tab
+  const handleCloseGuidelines = () => {
+    setActiveTab(""); // hide all tabs
+  };
+
   return (
     <>
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-
+      <main>
 
         <div className="btnSection flex gap-4">
           <div className="btnView cursor-pointer" onClick={() => setActiveTab("guidelines")}>
@@ -27,7 +31,7 @@ export default function Home() {
         </div>
 
         {/* Conditionally render only the selected component */}
-        {activeTab === "guidelines" && <Guidelines />}
+        {activeTab === "guidelines" && <Guidelines onClose={handleCloseGuidelines} />}
         {activeTab === "gridscale" && <GridScale />}
         {activeTab === "transformscale" && <TransformScale />}
       </main>

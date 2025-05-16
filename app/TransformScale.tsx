@@ -77,8 +77,11 @@ export default function TransformScale() {
   };
 
   return (
+    <>
+    <div className="title">Transform Scale</div>
     <div className="master desktopView">
       <div style={divStyle} className="scaleLogic">
+      
         <div className="mainNew">
           <div className="wrapper">
             <div className="roads"></div>
@@ -88,5 +91,7 @@ export default function TransformScale() {
         </div>
       </div>
     </div>
+    </>
+    
   );
 }

@@ -47,17 +47,29 @@
     .wrapper {
         column-gap: 12px;
     }
+    .scaleLogic {
+        bottom: 48px;
+        /* position: fixed !important; */
+    }
 }
 
 @media(min-width:1366px) {
     .wrapper {
         column-gap: 16px;
     }
+    .scaleLogic {
+        bottom: 60px;
+        /* position: fixed !important; */
+    }
 }
 
 @media(min-width:1512px) {
     .wrapper {
         column-gap: 18px;
+    }
+    .scaleLogic {
+        bottom: 72px;
+        /* position: fixed !important; */
     }
 }
 
