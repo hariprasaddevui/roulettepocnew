@@ -12,7 +12,7 @@ export default function Home() {
           height={38}
           priority
         />
-        <h1>hello</h1>
+        <h1>hello somy</h1>
       </main>
    
     </div>
