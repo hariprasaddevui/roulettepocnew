@@ -12,7 +12,7 @@ export default function Guidelines() {
                 <div className="header">
                     <h1>
                         Roulette UI review &nbsp;&nbsp;&nbsp;
-                        <small onClick={onClose} style={{ cursor: "pointer" }}>(PREVIEW)</small>
+                        {/* <small onClick={onClose} style={{ cursor: "pointer" }}>(PREVIEW)</small> */}
                     </h1>
                     <div>
                         <h4>
