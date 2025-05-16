@@ -8,8 +8,8 @@ export default function MyComponent() {
     <div className="my-container">
       <div className="screen">
         <div className="title">Grid Scale</div>
-        <div className="gameGridParent">
-          <div className="gamegrid">
+        <div className="grid-container">
+          <div className="gameGrid">
             <div className="raceTrack">
               <div className="raceTrackImg"></div>
             </div>

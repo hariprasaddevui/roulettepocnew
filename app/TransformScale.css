@@ -5,7 +5,6 @@
 
 .scaleLogic {
     bottom: 8.5%;
-    /* position: fixed !important; */
 }
 
 .master {
@@ -14,7 +13,6 @@
     align-items: end;
     justify-content: center;
     width: 100%;
-    /* background-color: pink; */
     height: 100vh;
 }
 
@@ -31,7 +29,6 @@
 
     align-items: end;
     justify-content: center;
-    /* padding: 0px gap; */
 }
 
 .wrapper {
@@ -47,9 +44,9 @@
     .wrapper {
         column-gap: 12px;
     }
+
     .scaleLogic {
         bottom: 48px;
-        /* position: fixed !important; */
     }
 }
 
@@ -57,9 +54,9 @@
     .wrapper {
         column-gap: 16px;
     }
+
     .scaleLogic {
         bottom: 60px;
-        /* position: fixed !important; */
     }
 }
 
@@ -67,9 +64,9 @@
     .wrapper {
         column-gap: 18px;
     }
+
     .scaleLogic {
         bottom: 72px;
-        /* position: fixed !important; */
     }
 }
 
@@ -88,56 +85,23 @@
 
 
 .roads {
-    background: url(../public/Images/Common_desktopRaceTrack.png) no-repeat center center;
-    background-position: bottom;
+    background: url(../public/Images/Common_desktopRaceTrack.png) no-repeat center bottom;
     width: 100%;
     background-size: contain;
     height: 100%;
 }
 
 .betBoard {
-    background: url(../public/Images/CommonDesktopBetBoard.png) no-repeat center center;
-
-    background-position: bottom;
+    background: url(../public/Images/CommonDesktopBetBoard.png) no-repeat center bottom;
     width: 100%;
     background-size: contain;
-
     height: 100%;
 
 }
 
 .rightRoads {
-    background: url(../public/Images/CommonDesktopStats.png) no-repeat center center;
-
+    background: url(../public/Images/CommonDesktopStats.png) no-repeat center bottom;
     width: 100%;
     background-size: contain;
-
     height: 386px;
-    background-position: bottom;
-
-}
-
-.flip {
-    transform: scaleX(-1);
-}
-
-.portraitView {
-    background-color: red;
-    display: none;
-}
-
-.landscapeView {
-    background-color: green;
-}
-
-@media (orientation: portrait) {
-    .portraitView {
-        display: block;
-    }
-}
-
-@media (orientation: landscape) {
-    .landscapeView {
-        display: block;
-    }
 }

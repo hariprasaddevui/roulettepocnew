@@ -1,21 +1,5 @@
-// import React from 'react'
-// import './TransformScale.css';
-
-// export default function TransformScale() {
-//   return (
-//     <div>
-//       <h1>lodhbvkahsvakbv
-//         Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere assumenda est sequi? Provident exercitationem libero voluptates minima quod! Beatae perferendis accusantium consequuntur, recusandae libero tenetur id reprehenderit dicta qui voluptatibus!
-//       </h1>
-//     </div>
-//   )
-// }
-
-
 import React, { useState, useEffect, CSSProperties } from "react";
-
 import './TransformScale.css';
-
 
 export default function TransformScale() {
   const [scale, setScale] = useState<number>(1);
@@ -70,6 +54,26 @@ export default function TransformScale() {
     };
   }, []);
 
+  // Tooltip updater
+  useEffect(() => {
+    const updateTooltip = () => {
+      const elements = document.querySelectorAll('.roads, .betBoard');
+
+      elements.forEach((el) => {
+        const rect = el.getBoundingClientRect();
+        const tooltipText = `W: ${Math.round(rect.width)}px, H: ${Math.round(rect.height)}px`;
+        el.setAttribute('title', tooltipText);
+      });
+    };
+
+    updateTooltip();
+    window.addEventListener('resize', updateTooltip);
+
+    return () => {
+      window.removeEventListener('resize', updateTooltip);
+    };
+  }, []);
+
   const divStyle: CSSProperties = {
     transform: `scale(${scale})`,
     transformOrigin: "center bottom",
@@ -78,20 +82,18 @@ export default function TransformScale() {
 
   return (
     <>
-    <div className="title">Transform Scale</div>
-    <div className="master desktopView">
-      <div style={divStyle} className="scaleLogic">
-      
-        <div className="mainNew">
-          <div className="wrapper">
-            <div className="roads"></div>
-            <div className="betBoard"></div>
-            <div className="roads rightRoads"></div>
+      <div className="title">Transform Scale</div>
+      <div className="master desktopView">
+        <div style={divStyle} className="scaleLogic">
+          <div className="mainNew">
+            <div className="wrapper">
+              <div className="roads"></div>
+              <div className="betBoard"></div>
+              <div className="roads rightRoads"></div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
     </>
-    
   );
 }

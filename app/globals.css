@@ -83,7 +83,10 @@ p.secondary {
   border: 1px solid rgba(255, 255, 255, 0.2);
 
 }
+.btnSection a{
+  text-decoration: none;
 
+}
 .btnSection .btnView {
   background-color: rgba(0, 0, 0, 0.2);
   color: #fff;
@@ -92,7 +95,7 @@ p.secondary {
   text-align: center;
   line-height: 36px;
   height: 36px;
-  padding: 0 15px;
+  padding: 0 25px;
   cursor: pointer;
   border-right: 1px solid rgba(255, 255, 255, 0.2);
   font-weight: bold;

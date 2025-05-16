@@ -20,14 +20,19 @@ export default function Home() {
 
         <div className="btnSection flex gap-4">
           <div className="btnView cursor-pointer" onClick={() => setActiveTab("guidelines")}>
-            Guidelines
+            Game Grid Specifications
           </div>
           <div className="btnView cursor-pointer" onClick={() => setActiveTab("gridscale")}>
-            Grid Scale
+            Grid Scale Approach
           </div>
           <div className="btnView cursor-pointer" onClick={() => setActiveTab("transformscale")}>
-            Transform Scale
+            Transform Scale Approach
           </div>
+
+          <a className="btnView cursor-pointer" target="_blank" href="https://www.figma.com/design/EB877eqGKeQQbI8SVIyXcv/HelloRoulette?node-id=214-46623&p=f&t=BShHoGqS6lIAcvnh-0">
+          Figma Screens Validation
+          </a>
+    
         </div>
 
         {/* Conditionally render only the selected component */}
