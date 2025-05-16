@@ -12,9 +12,7 @@ export default function Home() {
           height={38}
           priority
         />
-        <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit, consectetur explicabo repellat ab nemo sapiente incidunt accusantium pariatur sed ipsa consequatur laboriosam quam amet quisquam voluptas architecto reiciendis optio repudiandae?</h1>
-<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum, minus iste ad ipsam possimus nisi laborum et. Et at soluta quasi, ullam perspiciatis delectus voluptate possimus quis ratione, maiores ab.</p>
-   sfdghjkl;djkl;
+        <h1>hello</h1>
       </main>
    
     </div>
