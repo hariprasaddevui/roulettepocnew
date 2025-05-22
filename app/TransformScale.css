@@ -17,7 +17,7 @@
 }
 
 @media(max-width:1023px) {
-    .master {
+    .desktopView {
         display: none;
     }
 }

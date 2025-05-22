@@ -85,8 +85,8 @@ export default function TransformScale() {
 
   return (
     <>
-      <div className="title">Transform Scale</div>
-      {/* <div className="master desktopView">
+     
+      <div className="master desktopView">
         <div style={divStyle} className="scaleLogic">
           <div className="mainNew">
             <div className="wrapper">
@@ -96,7 +96,7 @@ export default function TransformScale() {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
       <div className={styles.gameGridContent}>
         <GridScaleResponsivePortrait />
         <GridScaleResponsiveLandscape />

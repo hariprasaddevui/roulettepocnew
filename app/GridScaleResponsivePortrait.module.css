@@ -124,7 +124,7 @@
 
 @media (orientation: portrait) {
     .gameUIResponsiveLandscape {
-        /* display: none; */
+        display: none;
     }
 }
 
