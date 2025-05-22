@@ -30,7 +30,7 @@ export default function Home() {
           </div>
 
           <a className="btnView cursor-pointer" target="_blank" href="https://www.figma.com/design/EB877eqGKeQQbI8SVIyXcv/HelloRoulette?node-id=214-46623&p=f&t=BShHoGqS6lIAcvnh-0">
-          Figma Screens Validation
+          Figma Screens Validation hey!
           </a>
     
         </div>
