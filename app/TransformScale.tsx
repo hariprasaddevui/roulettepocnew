@@ -1,5 +1,8 @@
 import React, { useState, useEffect, CSSProperties } from "react";
 import './TransformScale.css';
+import styles from './GameContent.module.css';
+import GridScaleResponsiveLandscape from './gridScaleResponsiveLandscape'
+import GridScaleResponsivePortrait from './gridScaleResponsivePortrait'
 
 export default function TransformScale() {
   const [scale, setScale] = useState<number>(1);
@@ -83,7 +86,7 @@ export default function TransformScale() {
   return (
     <>
       <div className="title">Transform Scale</div>
-      <div className="master desktopView">
+      {/* <div className="master desktopView">
         <div style={divStyle} className="scaleLogic">
           <div className="mainNew">
             <div className="wrapper">
@@ -93,7 +96,14 @@ export default function TransformScale() {
             </div>
           </div>
         </div>
+      </div> */}
+      <div className={styles.gameGridContent}>
+        <GridScaleResponsivePortrait />
+        <GridScaleResponsiveLandscape />
+
       </div>
+
+
     </>
   );
 }

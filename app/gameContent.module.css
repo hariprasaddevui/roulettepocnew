@@ -1,0 +1,31 @@
+.gameGridContent {
+  position: relative;
+  display: grid;
+  width: min(100%, 359px);
+  margin: 0 auto;
+  gap: var(--core-spacing-tiny);
+  grid-template:
+    'tfl' auto
+    'bgd' 1fr
+    'src' auto
+    / 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (--core-media-landscape) {
+  .gameGridContent {
+    grid-template:
+      'tfl' auto
+      'bgd' 182px
+      / 461px;
+  }
+}
+
+.streamReference {
+  position: fixed;
+  top: var(--core-safe-area-inset-top);
+  right: var(--core-safe-area-inset-right);
+  bottom: var(--core-safe-area-inset-bottom);
+  left: var(--core-safe-area-inset-left);
+}

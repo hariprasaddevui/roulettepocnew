@@ -1,0 +1,167 @@
+.gameUIResponsivePortrait {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    position: absolute;
+    bottom: -52px;
+    left: auto;
+    right: auto;
+    width: 100%;
+    color: white;
+}
+
+.btnSection {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 10px;
+    bottom: 135px;
+    border-radius: 4px;
+    border: 1px solid hsla(0, 0%, 100%, 0.2);
+    overflow: hidden;
+}
+
+.RaceTrackIconBtn {
+    border-bottom: 1px solid hsla(0, 0%, 100%, 0.2);
+}
+
+.RaceTrackIconBtn,
+.MinMaxIconBtn {
+    width: 30px;
+    height: 30px;
+    background-color: hsla(228, 100%, 2%, 0.3);
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* Minimized state styles */
+.isMinimized {
+    transform: scale(0.6);
+    transform-origin: bottom;
+}
+
+.raceTrackShuffleHeight {
+    /* transform: scale(1.069); */
+    transform-origin: bottom;
+    display: flex;
+}
+
+.isMinimized .raceTrackShuffleHeight {
+    background-color: red;
+    transform: scale(0.561);
+    transform-origin: bottom;
+}
+
+
+@media (orientation: landscape) {
+    .gameUIResponsivePortrait {
+        display: none;
+    }
+}
+
+
+.gameUIResponsiveLandscape {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    position: absolute;
+    bottom: -40px;
+    left: auto;
+    right: auto;
+    width: 100%;
+    color: white;
+}
+
+.btnSection {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 10px;
+    bottom: 135px;
+    border-radius: 4px;
+    border: 1px solid hsla(0, 0%, 100%, 0.2);
+    overflow: hidden;
+}
+
+.RaceTrackIconBtn {
+    border-bottom: 1px solid hsla(0, 0%, 100%, 0.2);
+}
+
+.RaceTrackIconBtn,
+.MinMaxIconBtn {
+    width: 30px;
+    height: 30px;
+    background-color: hsla(228, 100%, 2%, 0.3);
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.isMinimized {
+    transform: scale(0.6);
+    transform-origin: bottom;
+}
+
+.raceTrackShuffleHeight {
+    transform-origin: bottom;
+    display: flex;
+}
+
+.isMinimized .raceTrackShuffleHeight {
+    background-color: red;
+    transform: scale(0.561);
+    transform-origin: bottom;
+}
+
+.gameUIScaleLandscape {
+    display: flex;
+}
+
+@media (orientation: portrait) {
+    .gameUIResponsiveLandscape {
+        /* display: none; */
+    }
+}
+
+.gameUIShuffleAnimation {
+    transition: all 0.3s ease;
+}
+
+
+.betBoardViewSliderMove {
+    animation: slideInFromLeft 0.4s ease-in-out;
+}
+
+.raceTrackViewSliderMove {
+    animation: slideInFromRight 0.4s ease-in-out;
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-75%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(-75%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
