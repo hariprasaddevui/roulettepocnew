@@ -42,7 +42,7 @@
 
 @media(min-width:1024px) {
     .wrapper {
-        column-gap: 12px;
+        column-gap: 18px;
     }
 
     .scaleLogic {
@@ -51,28 +51,14 @@
 }
 
 @media(min-width:1366px) {
-    .wrapper {
-        column-gap: 16px;
-    }
-
     .scaleLogic {
         bottom: 60px;
     }
 }
 
 @media(min-width:1512px) {
-    .wrapper {
-        column-gap: 18px;
-    }
-
     .scaleLogic {
         bottom: 72px;
-    }
-}
-
-@media(min-width:1800px) {
-    .wrapper {
-        column-gap: 22px;
     }
 }
 
