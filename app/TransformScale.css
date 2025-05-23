@@ -105,3 +105,56 @@
     background-size: contain;
     height: 386px;
 }
+
+@keyframes figmaComparison {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+@media (width:1024px) and (height:576px) {
+    .btnSection {
+        background-color: red;
+    }
+
+    body {
+        background: url(../public/Images/1024Figma.png) no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .master {
+        animation: figmaComparison 1s linear 1s infinite;
+    }
+}
+/* 
+@media (min-width:1365px) and (max-width:1366px) and (min-height:768px) and(max-height:769px) {
+    .btnSection {
+        background-color: red;
+    }
+
+    body {
+        background: url(../public/Images/1512Figma.jpg) no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .master {
+        animation: figmaComparison 1s linear 1s infinite;
+    }
+}
+
+@media (width:1366px) and (height:769px) {
+    body {
+        background: url(../public/Images/1366Figma.png) no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .master {
+        animation: figmaComparison 1s linear 1s infinite;
+    }
+} */

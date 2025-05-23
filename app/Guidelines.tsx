@@ -1,6 +1,10 @@
 import React from 'react';
 
-export default function Guidelines({ onClose }) {
+type GuidelinesProps = {
+  onClose: () => void; // or `onClose?: () => void;` if optional
+};
+
+export default function Guidelines({ onClose }: GuidelinesProps) {
   return (
     <div>
       <div className="data">
