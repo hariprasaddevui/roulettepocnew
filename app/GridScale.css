@@ -43,7 +43,7 @@ div {
 
   .raceTrack,
   .stats {
-    display: none;
+    /* display: none; */
   }
 
   @media (orientation: portrait) {
@@ -137,5 +137,20 @@ div {
       background-size: 100% 100%;
       background-repeat: no-repeat;
       background-position: end;
+    }
+  }
+
+  @keyframes figmaComparison {
+    0%,100%{
+      opacity:1;
+    }
+    50%{
+      opacity: 0;
+    }
+  }
+
+  @media (width:1024px) and (height:576px) {
+    .betboard{
+      background-color: red;
     }
   }
