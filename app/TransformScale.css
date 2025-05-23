@@ -117,12 +117,7 @@
         opacity: 0;
     }
 }
-
-@media (width:1024px) and (height:576px) {
-    .btnSection {
-        background-color: red;
-    }
-
+@media(min-width:1024px) and (max-width:1024px) and (min-height:576px) and (max-height:577px){
     body {
         background: url(../public/Images/1024Figma.png) no-repeat;
         background-size: 100% 100%;
@@ -132,12 +127,17 @@
         animation: figmaComparison 1s linear 1s infinite;
     }
 }
-/* 
-@media (min-width:1365px) and (max-width:1366px) and (min-height:768px) and(max-height:769px) {
-    .btnSection {
-        background-color: red;
+@media(min-width:1366px) and (max-width:1366px) and (min-height:769px) and (max-height:770px){
+    body {
+        background: url(../public/Images/1366Figma.png) no-repeat;
+        background-size: 100% 100%;
     }
 
+    .master {
+        animation: figmaComparison 1s linear 1s infinite;
+    }
+}
+@media(min-width:1512px) and (max-width:1512px) and (min-height:851px) and (max-height:852px){
     body {
         background: url(../public/Images/1512Figma.jpg) no-repeat;
         background-size: 100% 100%;
@@ -147,14 +147,13 @@
         animation: figmaComparison 1s linear 1s infinite;
     }
 }
-
-@media (width:1366px) and (height:769px) {
+@media(min-width:1800px) and (max-width:1800px) and (min-height:1013px) and (max-height:1014px){
     body {
-        background: url(../public/Images/1366Figma.png) no-repeat;
+        background: url(../public/Images/1800Figma.png) no-repeat;
         background-size: 100% 100%;
     }
 
     .master {
         animation: figmaComparison 1s linear 1s infinite;
     }
-} */
+}
