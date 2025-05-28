@@ -1,6 +1,6 @@
 import React, { useState, useEffect, CSSProperties } from "react";
 import './TransformScale.css';
-import styles from './GameContent.module.css';
+// import styles from './GameContent.module.css';
 import GridScaleResponsiveLandscape from './gridScaleResponsiveLandscape'
 import GridScaleResponsivePortrait from './gridScaleResponsivePortrait'
 
@@ -97,11 +97,11 @@ export default function TransformScale() {
           </div>
         </div>
       </div>
-      <div className={styles.gameGridContent}>
+      {/* <div className={styles.gameGridContent}> */}
         <GridScaleResponsivePortrait />
         <GridScaleResponsiveLandscape />
 
-      </div>
+      {/* </div> */}
 
 
     </>
