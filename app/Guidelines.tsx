@@ -10,7 +10,7 @@ export default function Guidelines({ onClose }: GuidelinesProps) {
       <div className="data">
         <div className="header">
           <h1>
-            Roulette UI review
+            Roulette Game UI components specifications
           </h1>
           <div>
             <h4>

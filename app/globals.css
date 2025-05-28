@@ -103,6 +103,23 @@ p.secondary {
 
 }
 
+@media (max-width: 1024px) {
+  .btnSection .btnView{
+    padding: 0 5px;
+    white-space: nowrap;
+    font-size: 8px;
+    font-weight: normal;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+  }
+  .btnSection{
+    top:20px;
+    left:20px;
+    flex-direction: column;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+  }
+  
+}
+
 .btnSection .btnView:last-child {
   border-right: 0;
 }
